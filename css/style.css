@@ -26,6 +26,8 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 /* Itens do menu */
@@ -37,6 +39,8 @@ nav li {
 nav a {
   color: #000000;
   text-decoration: none;
+  padding: 8px 0;
+  display: inline-block;
 }
 
 /* Hover dos links do menu */
@@ -84,4 +88,29 @@ footer {
   color: #fff;
   text-align: center;
   padding: 15px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  main {
+    margin: 20px auto;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
 }
