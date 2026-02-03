@@ -114,3 +114,45 @@ footer {
     font-size: 14px;
   }
 }
+
+.titulo-ativo {
+  color: rgb(255, 0, 0);
+}
+
+.escondido {
+  display: none;
+}
+
+#btn-sobre {
+  margin-top: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  margin: 20px auto;
+  
+}
+
+section h2,
+section p {
+  text-align: center;
+}
+
+#btn-sobre {
+  background-color: black; /* cor do fundo */
+  color: white;            /* cor do texto */
+  border: none;              /* tira a borda padrão */
+  padding: 12px 24px;        /* tamanho do botão */
+  font-size: 16px;
+  cursor: pointer;           /* mãozinha ao passar o mouse */
+  border-radius: 20px;       /* canto do botão */
+  transition: background-color 0.8s, transform 0.2s;
+
+}
+#btn-sobre:hover {
+  background-color: #aca7a7;
+  color: #000000;
+}
+
+#btn-sobre:hover {
+  transform: scale(1.05);
+}
