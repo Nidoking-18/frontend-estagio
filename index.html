@@ -1,48 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <!-- Configuração de idioma e caracteres -->
   <meta charset="UTF-8">
+
+  <!-- Ajuste para responsividade -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Primeiro Projeto Front-End</title>
+
+  <!-- Título da aba do navegador -->
+  <title>Projeto de Front-End</title>
+
+  <!-- Importação do CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Cabeçalho com nome e descrição do site -->
+  <!-- Cabeçalho do site (nome + descrição) -->
   <header>
     <h1>Thiago Mendes Lacerda</h1>
-    <p>Meu Primeiro Projeto Front-End</p>
+    <p>Projeto de Front-End</p>
   </header>
 
-  <!-- Navegação principal -->
+  <!-- Menu de navegação principal -->
   <nav>
     <ul>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Projetos</a></li>
-      <li><a href="#">Contato</a></li>
+
+      
+      <!-- Link para a seção "Sobre" -->
+      <li class="menu-sobre">
+
+      <a href="#" id="link-sobre">Sobre</a>
+      <ul class="submenu escondido">
+        <li>WIP</li>
+      </ul>
+      </li>
+      
+      
+      <!-- Link para a seção "Projetos" -->
+      <li class="menu-projetos">
+
+      <a href="#" id="link-projetos">Projetos</a>
+      <ul class="submenu escondido">
+        <li>WIP</li>
+      </ul>
+      </li>
+
+
+
+
+      <!-- Item de menu com submenu (Contato) -->
+      <li class="menu-contato">
+
+        <!-- Link que ativa o submenu de contato -->
+        <a href="#" id="link-contato">Contato</a>
+
+        <!-- Submenu escondido (email) -->
+        <ul class="submenu escondido">
+        <li>Email: mrthiago361@gmail.com</li>
+        </ul>
+
+      </li>
     </ul>
   </nav>
 
   <!-- Conteúdo principal da página -->
   <main>
 
-    <!-- Seção de apresentação -->
+    <!-- Seção "Sobre mim" -->
     <section>
+
       <h2>Sobre mim</h2>
+
+      <!-- Texto principal -->
       <p>
         Olá, meu nome é Thiago, tenho 25 anos, sou estudante de Ciência da Computação da FMU, este projeto é com mais foco em Front-end
         pois me interessei bastante pela área.
       </p>
-      
-      <button id="btn-sobre">Mostrar mais</button>
-      <p id="texto-extra" class="escondido"> Parte para estudo de menus escondidos.
 
+      <!-- Botão que mostra/esconde conteúdo extra -->
+      <button id="btn-sobre">Mostrar mais</button>
+
+      <!-- Texto escondido controlado pelo botão -->
+      <p id="texto-extra" class="escondido">
+        Parte para estudo de menus escondidos.
       </p>
 
     </section>
 
     <!-- Seção de projetos -->
     <section>
+
       <h2>Projetos</h2>
 
       <!-- Projeto individual -->
@@ -56,15 +103,23 @@
         <h4>Projeto 2</h4>
         <p>...</p>
       </article>
+
+    </section>
+
+    <!-- Seção de contato alternativa (não usada no menu agora) -->
+    <section id="contato" class="escondido">
+      <h2>Contato</h2>
+      <p>Email: seuemail@example.com</p>
     </section>
 
   </main>
 
-  <!-- Rodapé -->
+  <!-- Rodapé do site -->
   <footer>
     <p>© 2026 - Thiago Mendes Lacerda</p>
   </footer>
 
+  <!-- Importação do JavaScript -->
   <script src="script.js"></script>
 
 </body>
